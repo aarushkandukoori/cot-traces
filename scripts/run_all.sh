@@ -1,5 +1,8 @@
 #!/bin/bash
 # Runs every capture, one model at a time. Run from the repo root on a Mac with Apple silicon.
+# gen.py adds lines to the end of its --out file, so this first moves the saved runs into runs/old/.
+mkdir -p runs/old
+mv runs/*.jsonl runs/old/ 2>/dev/null || true
 python3 scripts/gen.py --model mlx-community/DeepSeek-R1-Distill-Qwen-1.5B-4bit --mode think --seeds 0 1 2 --temp 0.6 --top_p 0.95 --top_k 0 --max_tokens 8192 --out runs/r1distill15_think.jsonl
 python3 scripts/gen.py --model mlx-community/Qwen3-1.7B-4bit --mode think --seeds 0 1 2 --temp 0.6 --top_p 0.95 --top_k 20 --max_tokens 8192 --out runs/qwen3_17_think.jsonl
 python3 scripts/gen.py --model mlx-community/Qwen3-1.7B-4bit --mode nothink --seeds 0 1 2 --temp 0.6 --top_p 0.95 --top_k 20 --max_tokens 8192 --out runs/qwen3_17_nothink.jsonl

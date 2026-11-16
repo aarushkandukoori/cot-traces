@@ -481,7 +481,7 @@
    "unfinished": 1,
    "runs_with_wait": 6,
    "total_waits": 128,
-   "mismatch": 4
+   "mismatch": 5
   },
   "q3": {
    "label": "Qwen3-1.7B",

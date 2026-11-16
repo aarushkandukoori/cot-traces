@@ -27,13 +27,14 @@ Each model answered each question three times. The page highlights the moments w
 - Right and wrong were graded by hand by reading every answer. The highlights are a plain word search.
 - Each run sets its own random seed, so any single run can be redone on its own. The Qwen3 job was paused once to free memory on the laptop, so the timing fields of its first run include that pause, and its last two thinking runs and all thinking-off runs were finished in a second process with the same settings.
 
-To redo the runs on a Mac with Apple silicon:
+To redo a run on a Mac with Apple silicon (here, Qwen3 on the sheep riddle with seed 0):
 
 ```
 pip install mlx-lm
-python3 scripts/gen.py --model mlx-community/Qwen3-1.7B-4bit --mode think --seeds 0 1 2 --top_k 20 --out runs/qwen3_17_think.jsonl
-python3 scripts/analyze.py --site .
+python3 scripts/gen.py --model mlx-community/Qwen3-1.7B-4bit --mode think --seeds 0 --only sheep --top_k 20 --out redo/qwen3_sheep.jsonl
 ```
+
+`gen.py` adds lines to the end of its `--out` file, so give it a new file name. `scripts/run_all.sh` redoes every run (it first moves the saved runs into `runs/old/`) and rebuilds the page data.
 
 ## Try the models yourself
 

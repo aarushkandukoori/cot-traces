@@ -22,7 +22,7 @@ r1,think,race,1,521,22,True,4,8,1,False,third place,third place,False
 r1,think,race,2,8192,0,False,100,106,0,False,(no answer),never finished,False
 r1,think,strawberry,0,87,148,True,0,0,0,True,3,3,False
 r1,think,strawberry,1,87,202,True,0,0,0,False,1,1,False
-r1,think,strawberry,2,116,198,True,0,0,0,True,3,3,False
+r1,think,strawberry,2,116,198,True,0,0,0,True,3,2 ('two times'),True
 r1,think,france,0,384,32,True,1,1,1,True,Paris,Paris,False
 r1,think,france,1,473,37,True,2,2,1,True,Paris,Paris,False
 r1,think,france,2,143,8,True,1,1,1,True,Paris,Paris,False
