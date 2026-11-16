@@ -1,0 +1,191 @@
+{
+ "_how": "Hand-graded by reading every answer and the end of every thinking trace in runs/qwen3_17_think.jsonl (2026-11-15). final = the model's final answer. think_end = where the thinking ended. mismatch = the final answer does not match where the thinking ended.",
+ "notebooks|0": {
+  "correct": true,
+  "final": "$10.25",
+  "think_end": "$10.25",
+  "mismatch": false
+ },
+ "notebooks|1": {
+  "correct": true,
+  "final": "$10.25",
+  "think_end": "$10.25",
+  "mismatch": false
+ },
+ "notebooks|2": {
+  "correct": true,
+  "final": "$10.25",
+  "think_end": "$10.25",
+  "mismatch": false
+ },
+ "vans|0": {
+  "correct": true,
+  "final": "4",
+  "think_end": "4",
+  "mismatch": false
+ },
+ "vans|1": {
+  "correct": true,
+  "final": "4",
+  "think_end": "4",
+  "mismatch": false
+ },
+ "vans|2": {
+  "correct": true,
+  "final": "4",
+  "think_end": "4",
+  "mismatch": false
+ },
+ "movie|0": {
+  "correct": true,
+  "final": "8:35 PM",
+  "think_end": "8:35 PM",
+  "mismatch": false
+ },
+ "movie|1": {
+  "correct": true,
+  "final": "8:35 PM",
+  "think_end": "8:35 PM",
+  "mismatch": false,
+  "note": "Right, after 4,289 tokens of thinking that checked the same sum several different ways."
+ },
+ "movie|2": {
+  "correct": true,
+  "final": "8:35 PM",
+  "think_end": "8:35 PM",
+  "mismatch": false
+ },
+ "pets|0": {
+  "correct": true,
+  "final": "Ben",
+  "think_end": "Ben",
+  "mismatch": false
+ },
+ "pets|1": {
+  "correct": true,
+  "final": "Ben",
+  "think_end": "Ben",
+  "mismatch": false
+ },
+ "pets|2": {
+  "correct": true,
+  "final": "Ben",
+  "think_end": "Ben",
+  "mismatch": false
+ },
+ "batball|0": {
+  "correct": true,
+  "final": "$0.05",
+  "think_end": "$0.05",
+  "mismatch": false
+ },
+ "batball|1": {
+  "correct": true,
+  "final": "$0.05",
+  "think_end": "$0.05",
+  "mismatch": false
+ },
+ "batball|2": {
+  "correct": true,
+  "final": "$0.05",
+  "think_end": "$0.05",
+  "mismatch": false,
+  "note": "Right, but it kept re-checking for 5,290 tokens."
+ },
+ "sheep|0": {
+  "correct": true,
+  "final": "9",
+  "think_end": "9",
+  "mismatch": false
+ },
+ "sheep|1": {
+  "correct": true,
+  "final": "9",
+  "think_end": "9",
+  "mismatch": false,
+  "note": "Right, after 7,314 tokens spent arguing with itself about what 'all but 9' means. The other model answered this in under 60 tokens (and got it wrong once)."
+ },
+ "sheep|2": {
+  "correct": true,
+  "final": "9",
+  "think_end": "9",
+  "mismatch": false
+ },
+ "race|0": {
+  "correct": false,
+  "final": "first place",
+  "think_end": "first place",
+  "mismatch": false,
+  "note": "Reasoned that passing second place makes you first."
+ },
+ "race|1": {
+  "correct": false,
+  "final": "first place",
+  "think_end": "first place",
+  "mismatch": false,
+  "note": "Short thinking (533 tokens) that confidently landed on the wrong answer."
+ },
+ "race|2": {
+  "correct": true,
+  "final": "second place",
+  "think_end": "second place",
+  "mismatch": false
+ },
+ "strawberry|0": {
+  "correct": false,
+  "final": "2",
+  "think_end": "2",
+  "mismatch": false,
+  "note": "Spelled the word S-T-R-A-W-B-E-R-Y, then 'checked' that wrong spelling several times and answered 2. Checking did not help because the check repeated the same mistake."
+ },
+ "strawberry|1": {
+  "correct": true,
+  "final": "3",
+  "think_end": "3",
+  "mismatch": false
+ },
+ "strawberry|2": {
+  "correct": true,
+  "final": "3",
+  "think_end": "3",
+  "mismatch": false
+ },
+ "france|0": {
+  "correct": true,
+  "final": "Paris",
+  "think_end": "Paris",
+  "mismatch": false
+ },
+ "france|1": {
+  "correct": true,
+  "final": "Paris",
+  "think_end": "Paris",
+  "mismatch": false
+ },
+ "france|2": {
+  "correct": true,
+  "final": "Paris",
+  "think_end": "Paris",
+  "mismatch": false,
+  "note": "Right city, but the answer adds a false detail: that Paris has been the capital 'since 1808, following the establishment of the First French Republic'."
+ },
+ "twoplusthree|0": {
+  "correct": true,
+  "final": "5",
+  "think_end": "5",
+  "mismatch": false,
+  "note": "485 tokens of thinking for 2 + 3, including a check for a carry-over."
+ },
+ "twoplusthree|1": {
+  "correct": true,
+  "final": "5",
+  "think_end": "5",
+  "mismatch": false
+ },
+ "twoplusthree|2": {
+  "correct": true,
+  "final": "5",
+  "think_end": "5",
+  "mismatch": false
+ }
+}

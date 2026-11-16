@@ -1,0 +1,509 @@
+{
+ "by_question": {
+  "notebooks": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     143,
+     141,
+     154
+    ],
+    "median_thinking": 143,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     1641,
+     1755,
+     1665
+    ],
+    "median_thinking": 1665,
+    "waits": [
+     15,
+     18,
+     4
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "vans": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     127,
+     116,
+     130
+    ],
+    "median_thinking": 127,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     1303,
+     2493,
+     940
+    ],
+    "median_thinking": 1303,
+    "waits": [
+     7,
+     18,
+     6
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "movie": {
+   "r1": {
+    "correct": 1,
+    "runs": 3,
+    "thinking": [
+     115,
+     135,
+     156
+    ],
+    "median_thinking": 135,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     2500,
+     4289,
+     2537
+    ],
+    "median_thinking": 2537,
+    "waits": [
+     11,
+     33,
+     19
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "pets": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     246,
+     136,
+     132
+    ],
+    "median_thinking": 136,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     750,
+     920,
+     745
+    ],
+    "median_thinking": 750,
+    "waits": [
+     8,
+     12,
+     11
+    ]
+   },
+   "q3off": {
+    "correct": 2,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "batball": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     171,
+     160,
+     169
+    ],
+    "median_thinking": 169,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     1339,
+     2882,
+     5290
+    ],
+    "median_thinking": 2882,
+    "waits": [
+     5,
+     8,
+     4
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "sheep": {
+   "r1": {
+    "correct": 2,
+    "runs": 3,
+    "thinking": [
+     27,
+     55,
+     39
+    ],
+    "median_thinking": 39,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     3934,
+     7314,
+     5427
+    ],
+    "median_thinking": 5427,
+    "waits": [
+     12,
+     11,
+     12
+    ]
+   },
+   "q3off": {
+    "correct": 1,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "race": {
+   "r1": {
+    "correct": 1,
+    "runs": 3,
+    "thinking": [
+     1814,
+     521,
+     8192
+    ],
+    "median_thinking": 1814,
+    "waits": [
+     20,
+     4,
+     100
+    ]
+   },
+   "q3": {
+    "correct": 1,
+    "runs": 3,
+    "thinking": [
+     1171,
+     533,
+     2998
+    ],
+    "median_thinking": 1171,
+    "waits": [
+     10,
+     2,
+     18
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "strawberry": {
+   "r1": {
+    "correct": 2,
+    "runs": 3,
+    "thinking": [
+     87,
+     87,
+     116
+    ],
+    "median_thinking": 87,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 2,
+    "runs": 3,
+    "thinking": [
+     666,
+     1035,
+     1100
+    ],
+    "median_thinking": 1035,
+    "waits": [
+     7,
+     9,
+     16
+    ]
+   },
+   "q3off": {
+    "correct": 2,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "france": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     384,
+     473,
+     143
+    ],
+    "median_thinking": 384,
+    "waits": [
+     1,
+     2,
+     1
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     143,
+     220,
+     198
+    ],
+    "median_thinking": 198,
+    "waits": [
+     1,
+     1,
+     1
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "twoplusthree": {
+   "r1": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     59,
+     45,
+     74
+    ],
+    "median_thinking": 59,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   },
+   "q3": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     485,
+     345,
+     155
+    ],
+    "median_thinking": 345,
+    "waits": [
+     3,
+     1,
+     1
+    ]
+   },
+   "q3off": {
+    "correct": 3,
+    "runs": 3,
+    "thinking": [
+     0,
+     0,
+     0
+    ],
+    "median_thinking": 0,
+    "waits": [
+     0,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "by_model": {
+  "r1": {
+   "label": "DeepSeek-R1-Distill-Qwen-1.5B",
+   "runs": 30,
+   "correct": 24,
+   "median_thinking": 135.5,
+   "max_thinking": 8192,
+   "unfinished": 1,
+   "runs_with_wait": 6,
+   "total_waits": 128,
+   "mismatch": 4
+  },
+  "q3": {
+   "label": "Qwen3-1.7B",
+   "runs": 30,
+   "correct": 27,
+   "median_thinking": 1237.0,
+   "max_thinking": 7314,
+   "unfinished": 0,
+   "runs_with_wait": 30,
+   "total_waits": 284,
+   "mismatch": 0
+  },
+  "q3off": {
+   "label": "Qwen3-1.7B, thinking off",
+   "runs": 30,
+   "correct": 26,
+   "median_thinking": 0.0,
+   "max_thinking": 0,
+   "unfinished": 0,
+   "runs_with_wait": 0,
+   "total_waits": 0,
+   "mismatch": 0
+  }
+ }
+}

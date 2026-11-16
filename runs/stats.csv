@@ -1,0 +1,91 @@
+model,mode,qid,seed,n_thinking,n_answer,finished,waits,turns,checks,correct,final,think_end,mismatch
+r1,think,notebooks,0,143,191,True,0,0,0,True,$10.25,$10.25,False
+r1,think,notebooks,1,141,176,True,0,0,0,True,$10.25,$10.25,False
+r1,think,notebooks,2,154,185,True,0,0,0,True,$10.25,$10.25,False
+r1,think,vans,0,127,250,True,0,0,0,True,4,4,False
+r1,think,vans,1,116,244,True,0,0,0,True,4,4,False
+r1,think,vans,2,130,174,True,0,0,0,True,4,4,False
+r1,think,movie,0,115,367,True,0,0,0,False,2:20 AM,9:35 PM,True
+r1,think,movie,1,135,383,True,0,0,0,False,2:35 AM,12:25 AM,True
+r1,think,movie,2,156,209,True,0,0,0,True,8:35 PM,8:35 PM,False
+r1,think,pets,0,246,181,True,0,0,0,True,Ben,unsure: 'either Ben or Cara',True
+r1,think,pets,1,136,170,True,0,0,0,True,Ben,Ben,False
+r1,think,pets,2,132,203,True,0,0,0,True,Ben,Ben,False
+r1,think,batball,0,171,330,True,0,0,0,True,$0.05,$0.05,False
+r1,think,batball,1,160,354,True,0,0,0,True,$0.05,$0.05,False
+r1,think,batball,2,169,276,True,0,0,0,True,5 cents,5 cents,False
+r1,think,sheep,0,27,385,True,0,0,0,True,9,0 ('All of these sheep have run away'),True
+r1,think,sheep,1,55,128,True,0,0,0,False,8,8 (17 - 9),False
+r1,think,sheep,2,39,113,True,0,0,0,True,9,9,False
+r1,think,race,0,1814,20,True,20,21,0,True,second place,second place,False
+r1,think,race,1,521,22,True,4,8,1,False,third place,third place,False
+r1,think,race,2,8192,0,False,100,106,0,False,(no answer),never finished,False
+r1,think,strawberry,0,87,148,True,0,0,0,True,3,3,False
+r1,think,strawberry,1,87,202,True,0,0,0,False,1,1,False
+r1,think,strawberry,2,116,198,True,0,0,0,True,3,3,False
+r1,think,france,0,384,32,True,1,1,1,True,Paris,Paris,False
+r1,think,france,1,473,37,True,2,2,1,True,Paris,Paris,False
+r1,think,france,2,143,8,True,1,1,1,True,Paris,Paris,False
+r1,think,twoplusthree,0,59,70,True,0,0,0,True,5,5,False
+r1,think,twoplusthree,1,45,90,True,0,0,0,True,5,5,False
+r1,think,twoplusthree,2,74,87,True,0,0,0,True,5,5,False
+q3,think,notebooks,0,1641,192,True,15,20,6,True,$10.25,$10.25,False
+q3,think,notebooks,1,1755,218,True,18,23,5,True,$10.25,$10.25,False
+q3,think,notebooks,2,1665,219,True,4,10,4,True,$10.25,$10.25,False
+q3,think,vans,0,1303,166,True,7,11,5,True,4,4,False
+q3,think,vans,1,2493,165,True,18,24,6,True,4,4,False
+q3,think,vans,2,940,185,True,6,7,6,True,4,4,False
+q3,think,movie,0,2500,144,True,11,17,5,True,8:35 PM,8:35 PM,False
+q3,think,movie,1,4289,228,True,33,38,12,True,8:35 PM,8:35 PM,False
+q3,think,movie,2,2537,192,True,19,24,4,True,8:35 PM,8:35 PM,False
+q3,think,pets,0,750,145,True,8,8,5,True,Ben,Ben,False
+q3,think,pets,1,920,143,True,12,13,6,True,Ben,Ben,False
+q3,think,pets,2,745,128,True,11,11,7,True,Ben,Ben,False
+q3,think,batball,0,1339,211,True,5,9,4,True,$0.05,$0.05,False
+q3,think,batball,1,2882,260,True,8,20,9,True,$0.05,$0.05,False
+q3,think,batball,2,5290,309,True,4,28,10,True,$0.05,$0.05,False
+q3,think,sheep,0,3934,224,True,12,23,6,True,9,9,False
+q3,think,sheep,1,7314,202,True,11,38,4,True,9,9,False
+q3,think,sheep,2,5427,208,True,12,35,4,True,9,9,False
+q3,think,race,0,1171,125,True,10,14,1,False,first place,first place,False
+q3,think,race,1,533,65,True,2,5,1,False,first place,first place,False
+q3,think,race,2,2998,142,True,18,23,2,True,second place,second place,False
+q3,think,strawberry,0,666,95,True,7,8,9,False,2,2,False
+q3,think,strawberry,1,1035,169,True,9,10,12,True,3,3,False
+q3,think,strawberry,2,1100,123,True,16,17,9,True,3,3,False
+q3,think,france,0,143,24,True,1,1,2,True,Paris,Paris,False
+q3,think,france,1,220,24,True,1,1,2,True,Paris,Paris,False
+q3,think,france,2,198,69,True,1,1,2,True,Paris,Paris,False
+q3,think,twoplusthree,0,485,82,True,3,5,1,True,5,5,False
+q3,think,twoplusthree,1,345,106,True,1,2,2,True,5,5,False
+q3,think,twoplusthree,2,155,73,True,1,2,1,True,5,5,False
+q3off,nothink,notebooks,0,0,202,True,0,0,0,True,$10.25,,False
+q3off,nothink,notebooks,1,0,187,True,0,0,0,True,$10.25,,False
+q3off,nothink,notebooks,2,0,140,True,0,0,0,True,$10.25,,False
+q3off,nothink,vans,0,0,196,True,0,0,0,True,4,,False
+q3off,nothink,vans,1,0,165,True,0,0,0,True,4,,False
+q3off,nothink,vans,2,0,190,True,0,0,0,True,4,,False
+q3off,nothink,movie,0,0,125,True,0,0,0,True,8:35 PM,,False
+q3off,nothink,movie,1,0,121,True,0,0,0,True,8:35 PM,,False
+q3off,nothink,movie,2,0,126,True,0,0,0,True,8:35 PM,,False
+q3off,nothink,pets,0,0,306,True,0,0,0,True,Ben,,False
+q3off,nothink,pets,1,0,290,True,0,0,0,True,Ben,,False
+q3off,nothink,pets,2,0,279,True,0,0,0,False,Cara,,False
+q3off,nothink,batball,0,0,165,True,0,0,0,True,$0.05,,False
+q3off,nothink,batball,1,0,173,True,0,0,0,True,$0.05,,False
+q3off,nothink,batball,2,0,162,True,0,0,0,True,$0.05,,False
+q3off,nothink,sheep,0,0,88,True,0,0,0,False,8,,False
+q3off,nothink,sheep,1,0,161,True,0,0,0,True,9,,False
+q3off,nothink,sheep,2,0,96,True,0,0,0,False,8,,False
+q3off,nothink,race,0,0,82,True,0,0,0,True,second place,,False
+q3off,nothink,race,1,0,85,True,0,0,0,True,second place,,False
+q3off,nothink,race,2,0,84,True,0,0,0,True,second place,,False
+q3off,nothink,strawberry,0,0,100,True,0,0,0,False,2,,False
+q3off,nothink,strawberry,1,0,164,True,0,0,0,True,3,,False
+q3off,nothink,strawberry,2,0,149,True,0,0,0,True,3,,False
+q3off,nothink,france,0,0,7,True,0,0,0,True,Paris,,False
+q3off,nothink,france,1,0,9,True,0,0,0,True,Paris,,False
+q3off,nothink,france,2,0,9,True,0,0,0,True,Paris,,False
+q3off,nothink,twoplusthree,0,0,8,True,0,0,0,True,5,,False
+q3off,nothink,twoplusthree,1,0,8,True,0,0,0,True,5,,False
+q3off,nothink,twoplusthree,2,0,8,True,0,0,0,True,5,,False

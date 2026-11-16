@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>What AI "thinking" looks like</title>
+<meta name="description" content="Real, unedited chain-of-thought traces from two small, free AI models on ten school-style questions, with the Wait moments, checks and wrong turns marked.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>What AI "thinking" looks like</h1>
+  <p class="lede">Real, unedited scratch work from two small, free AI models on ten school-style questions. Every question was asked three times to each model, 90 runs in all, on a laptop in November 2026.</p>
+</header>
+
+<main>
+<section aria-labelledby="short">
+  <h2 id="short">The short version</h2>
+  <ul class="plain">
+    <li>Many chatbots now write out scratch work before they answer. Researchers call it <em>chain of thought</em>.</li>
+    <li>The big chatbot companies keep the raw scratch work hidden. OpenAI, Google and Anthropic can show a summary, and Anthropic says its summaries are written by a different model (sources at the bottom).</li>
+    <li>Free "open" models show all of it. The two here, <span class="key r1">DeepSeek-R1-Distill-Qwen-1.5B</span> and <span class="key q3">Qwen3-1.7B</span>, are small enough to run on a laptop.</li>
+    <li>Things to look for: <mark class="turn">Wait</mark> moments where the model changes its mind, <mark class="check">double-check</mark> moments, wrong turns, long thinking on easy questions, and final answers that do not match the scratch work.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="stood">
+  <h2 id="stood">What stood out</h2>
+  <ul class="plain">
+    <li><strong>Two styles.</strong> Qwen3's thinking was long (a median of 1,237 tokens), and every one of its 30 runs said "Wait" at least once. R1-Distill's thinking was short (a median of 136 tokens), and it usually wrote out a worked solution in the answer instead.</li>
+    <li><strong>Long thinking on easy questions.</strong> Qwen3 used 3,934 to 7,314 tokens on the sheep riddle and 485 tokens on one run of "What is 2 + 3?".</li>
+    <li><strong>Loops.</strong> One R1-Distill run never answered the race riddle. It repeated the same sentence 38 times until it hit the 8,192-token limit.</li>
+    <li><strong>Answers that do not match the scratch work.</strong> In 4 of 30 R1-Distill runs, the final answer did not match where the thinking ended. One chain decided the farmer had 0 sheep left, and the answer right after it said 9.</li>
+    <li><strong>Checks that do not help.</strong> One Qwen3 run spelled "strawberry" with one r too few, checked that spelling again and again, and answered 2.</li>
+    <li><strong>Thinking on or off.</strong> Qwen3 got 27 of 30 right with thinking and 26 of 30 without it, while thinking used about 16 times as many tokens. Thinking fixed the sheep riddle and broke the race riddle.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="glance">
+  <h2 id="glance">At a glance</h2>
+  <p class="small">Right answers out of 3 runs, and how long the thinking was in each run (in tokens; a token is a word or a piece of a word).</p>
+  <div class="table-wrap" tabindex="0" role="region" aria-labelledby="glance">
+    <table id="summary">
+      <thead>
+        <tr>
+          <th scope="col">Question</th>
+          <th scope="col">Right answer</th>
+          <th scope="col"><span class="key r1">R1-Distill 1.5B</span> right</th>
+          <th scope="col">Thinking tokens</th>
+          <th scope="col"><span class="key q3">Qwen3 1.7B</span> right</th>
+          <th scope="col">Thinking tokens</th>
+          <th scope="col"><span class="key off">Qwen3, no thinking</span> right</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="runs">
+  <h2 id="runs">Every run</h2>
+  <form class="filters" id="filters" aria-label="Filter the runs">
+    <fieldset>
+      <legend>Model</legend>
+      <label><input type="radio" name="model" value="all" checked> All</label>
+      <label><input type="radio" name="model" value="r1"> R1-Distill 1.5B</label>
+      <label><input type="radio" name="model" value="q3"> Qwen3 1.7B</label>
+      <label><input type="radio" name="model" value="q3off"> Qwen3, thinking off</label>
+    </fieldset>
+    <fieldset>
+      <legend>Show</legend>
+      <label><input type="radio" name="show" value="all" checked> All runs</label>
+      <label><input type="radio" name="show" value="wrong"> Wrong or no answer</label>
+      <label><input type="radio" name="show" value="wait"> Says "Wait"</label>
+      <label><input type="radio" name="show" value="mismatch"> Answer and thinking disagree</label>
+    </fieldset>
+  </form>
+  <p class="small" id="count" aria-live="polite"></p>
+  <div id="list"></div>
+</section>
+
+<section aria-labelledby="try">
+  <h2 id="try">Try it yourself</h2>
+  <p>Both models are free to download and run on a laptop. One easy way is <a href="https://ollama.com">Ollama</a>, which runs on Mac, Windows and Linux. Install it, open a terminal, and type one of these:</p>
+  <pre class="cmd">ollama run qwen3:1.7b
+ollama run deepseek-r1:1.5b</pre>
+  <p>The first download is about 1 to 1.5 GB. Then type any question. The thinking prints before the answer. For thinking models, Ollama's <code>/set nothink</code> turns the thinking off and <code>/set think</code> turns it back on, so a class can ask the same question both ways and compare. On school Chromebooks that cannot install apps, a teacher laptop on a projector works too.</p>
+</section>
+
+<section aria-labelledby="big">
+  <h2 id="big">What the big chatbots show (checked November 15, 2026)</h2>
+  <ul class="plain">
+    <li><strong>OpenAI.</strong> The raw reasoning stays hidden ("not visible via the API"), and developers can ask for a summary. <a href="https://developers.openai.com/api/docs/guides/reasoning">Reasoning guide</a>. OpenAI first hid the raw chains with its o1 model in September 2024.</li>
+    <li><strong>Anthropic (Claude).</strong> What you see "is never the raw chain of thought". It is a summary, made "by a different model", and newer Claude models return no thinking text unless asked. <a href="https://platform.claude.com/docs/en/build-with-claude/thinking">Thinking docs</a>.</li>
+    <li><strong>Google (Gemini).</strong> "By default, only the final output is returned." Developers can turn on thought summaries. <a href="https://aistudio.google.com/docs/thinking">Gemini thinking docs</a>.</li>
+    <li><strong>Open models</strong> such as DeepSeek-R1, Qwen3 and OpenAI's gpt-oss show the whole chain. OpenAI's own <a href="https://huggingface.co/openai/gpt-oss-20b">gpt-oss page</a> gives "complete access to the model's reasoning process" and adds that it is "not intended to be shown to end users".</li>
+  </ul>
+</section>
+
+<section aria-labelledby="how">
+  <h2 id="how">How these were made</h2>
+  <ul class="plain small">
+    <li>Each question was typed in exactly as shown, with no system prompt and no examples. Each model answered every question three times (seeds 0, 1 and 2).</li>
+    <li>Settings - temperature 0.6, top-p 0.95 (both models' recommended thinking settings), top-k 20 for Qwen3, at most 8,192 new tokens. Thinking off for Qwen3 used its built-in switch with the same settings.</li>
+    <li>Models - 4-bit MLX versions (<code>mlx-community/DeepSeek-R1-Distill-Qwen-1.5B-4bit</code>, <code>mlx-community/Qwen3-1.7B-4bit</code>) run with mlx_lm 0.32.0 on a MacBook Pro (Apple M4) on November 15, 2026.</li>
+    <li>Nothing was edited. "Right" and "wrong" were graded by hand. The highlights are a simple word search for Wait, Hmm, Actually, Hold on and Alternatively, and the underlines for double-check, verify, make sure and let me check.</li>
+    <li>Raw outputs, grades and code are in the <a href="https://github.com/aarushkandukoori/cot-traces">GitHub repo</a>.</li>
+  </ul>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Made by Aarush Kandukoori</p>
+</footer>
+
+<script src="data/traces.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

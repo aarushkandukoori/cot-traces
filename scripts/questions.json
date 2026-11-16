@@ -1,0 +1,12 @@
+[
+  {"id": "notebooks", "kind": "multi-step word problem", "text": "Maya has $20. She buys 3 notebooks that cost $2.75 each and one pen that costs $1.50. How much money does she have left?", "gold": "$10.25", "accept": "10\\.25"},
+  {"id": "vans", "kind": "multi-step word problem", "text": "A class of 27 students and 3 teachers is going on a field trip. Each van holds 8 people. How many vans do they need?", "gold": "4 vans", "accept": "\\b4\\b|four"},
+  {"id": "movie", "kind": "multi-step word problem", "text": "A movie starts at 6:45 PM and lasts 1 hour and 50 minutes. What time does it end?", "gold": "8:35 PM", "accept": "8:35"},
+  {"id": "pets", "kind": "logic puzzle", "text": "Ana, Ben and Cara each have one pet: a cat, a dog or a fish. Each person has a different pet. Ana's pet lives in water. Ben is allergic to cats. Who owns the dog?", "gold": "Ben", "accept": "\\bBen\\b"},
+  {"id": "batball", "kind": "trick question", "text": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?", "gold": "5 cents ($0.05)", "accept": "0?\\.05|5 cents|five cents"},
+  {"id": "sheep", "kind": "trick question", "text": "A farmer has 17 sheep. All but 9 run away. How many sheep does the farmer have left?", "gold": "9", "accept": "\\b9\\b|nine"},
+  {"id": "race", "kind": "trick question", "text": "If you are running a race and you pass the person in second place, what place are you in now?", "gold": "second place", "accept": "\\bsecond\\b|\\b2nd\\b"},
+  {"id": "strawberry", "kind": "counting", "text": "How many times does the letter r appear in the word strawberry?", "gold": "3", "accept": "\\b3\\b|three"},
+  {"id": "france", "kind": "simple fact", "text": "What is the capital of France?", "gold": "Paris", "accept": "Paris"},
+  {"id": "twoplusthree", "kind": "simple fact", "text": "What is 2 + 3?", "gold": "5", "accept": "\\b5\\b|five"}
+]
