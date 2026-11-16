@@ -1,6 +1,6 @@
 # What AI "thinking" looks like
 
-Live page: https://aarushkandukoori.com/cot-traces/
+Live page: https://aarushkandukoori.github.io/cot-traces/
 
 Many chatbots now write out scratch work before they answer. People call it chain of thought. The big chatbot companies hide the raw scratch work or show a summary, but free open models show all of it.
 
